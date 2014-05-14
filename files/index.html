@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="author" content="Victor Coulon">
+    <meta name="description" content="jQuery plugin for creating an unique page transitioning system">
+    <link rel="stylesheet" href="../curtain.css">
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+
+<ol class="curtains">
+    <!--<li id="section-1" class="cover" data-parallax-background="-.05">-->
+    <li id="section-1" class="cover">
+        <header data-fade="550" data-slow-scroll="3">
+            <h1>Erick Allas</h1>
+            <h2>IT | Coder | Dancer | Poet
+            <br><audio controls autoplay>
+  			<source src="music/WWW.mp3" type="audio/mpeg">
+			</audio></h2>
+        </header>
+    </li>
+    <li id="section-2">
+        <article>
+            <h4>Who is Erick Allas?</h4>
+            <hr>
+            <p>Erick Allas is a Junior at NJIT majoring in Information Technology in the focus of Networks & Security. Erick is an outstanding 					 			and intelligent individual. He has excellent work ethics and habits. Erick always strives for improvement and looks to seize new 			   			opportunities. He has proven himself to be great leader and worker. He has lead and coordinated events as a programmer for Student 	 			Activities Council. He also now writes for the school's newspaper, Vector. He has scheduled and organized events for the school  		 			while covering and writing other events that occur on campus. He strives to reach higher goals while working with others along the 	 			way.
+			</p>
+            <h4>Skills</h4>
+            <p>
+            <hr>
+            <ul>
+            	<li>&middot;Proficient: Windows, PhotoShop, HTML, CSS, Microsoft Office </li>
+                ~
+				<li>&middot;Working Knowledge: Java, Matlab, Python, C++, Flash</li>
+                ~
+				<li>&middot;Familiar: JavaScript, Adobe Illustrator, AFS</li>
+			</ul>
+        </article>
+    </li>
+    <li id="section-3">
+        <section class="photos">
+            <div class="fixed">
+                <h4>Insight on him</h4>
+                <p>He lives his life with love and compassion towards his family and friends. He loves to be in the company of people, both 		 				young and old; however, when work is present, he will strive to complete his work and finish all tasks associated with it. He 	 				always tries to find the best in everyone and will always give a helping hand towards others. Overall, he is an open,  			 				eccentric, and ambitious man who cares for his work and for those around him.</p>
+            </div>
+            <div class="photos-inner">
+                <ul class="step-list">
+                    <li class="step">
+                        <img src="img/sec3/1.jpg" alt="">
+                    </li>
+                    <li class="step">
+                        <img src="img/sec3/2.jpg" alt="">
+                    </li>
+                    <li class="step">
+                        <img src="img/sec3/3.jpg" alt="">
+                    </li>
+                    <li class="step">
+                        <img src="img/sec3/4.jpg" alt="">
+                    </li>
+                    <li class="step">
+                        <img src="img/sec3/5.jpg" alt="">
+                    </li>
+                    <li class="step">
+                        <img src="img/sec3/6.jpg" alt="">
+                    </li>
+                    <li class="step">
+                        <img src="img/sec3/7.jpg" alt="">
+                    </li>
+                    <li class="step">
+                        <img src="img/sec3/8.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="cap1">
+                <h4>Family</h4>
+                <p>Is the most important aspect of his life. To him, family comes first.</p>
+            </div>
+            <div class="cap2">
+                <h4>Love</h4>
+                <p>Is what he strives to give to a special someone.</p>
+            </div>
+            <div class="cap3">
+                <h4>Friendship</h4>
+                <p>Is what he tries to grow into lasting memories.</p>
+            </div>
+            <div class="cap4">
+                <h4>Happiness</h4>
+                <p>Is what he strives to give to those around him.</p>
+            </div>
+            <div class="cap5">
+                <h4>Peace</h4>
+                <p>Is how he tries to live his life.</p>
+            </div>
+            <div class="cap6">
+                <h4>Care</h4>
+                <p>Is what he gives towards anyone and anything.</p>
+            </div>
+            <div class="cap7">
+                <h4>Perseverance</h4>
+                <p>Is how he pushes himself to achieve the most out of his work.</p>
+            </div>
+            <div class="cap8">
+                <h4>Future</h4>
+                <p>Is what he always looks forward to. To see what surprises will come next.</p>
+            </div>
+        </section>
+    </li>
+    <li id="section-4">
+    	<article>
+            <h4>Contact Information</h4>
+				<hr>
+				E-Mail
+				<br>
+				<a href="mailto:allas.p.erick@gmail.com">Erick Allas</a>
+				
+				<hr>
+				Phone
+				<br>
+				<a href="tel:732-284-0867">732-284-0867</a>
+				
+				<hr>
+				Github
+				<br>
+				<a href="https://github.com/NujabesSoul">NujabesSoul</a>
+				
+				<hr class="extend">
+				
+            <h4>Credits</h4>
+				<hr>
+				Victa for curtain affect
+				<br>
+				<a href="https://github.com/victa/curtain.js">Victa Github</a>		
+		</article>
+    </li>
+</ol>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="../curtain.js"></script>
+<script>
+    $(function(){
+       $('.curtains').curtain({
+           scrollSpeed: 300,
+           controls: '.menu',
+           curtainLinks: '.curtain-links',
+           nextSlide: function(){
+            console.log("ok");
+           }
+       });
+    });
+</script>
+</body>
+</html>
